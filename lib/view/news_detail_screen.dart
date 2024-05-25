@@ -29,6 +29,7 @@ class _NewsDetailsScreenState extends State<NewsDetailsScreen> {
       body: Stack(
         children: [
           Container(
+            height: height*.45,
             child: ClipRRect(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(30),
@@ -59,7 +60,14 @@ class _NewsDetailsScreenState extends State<NewsDetailsScreen> {
                    SizedBox(height: height* .02,),
                    Row(
                      children: [
-                       Text(widget.description,style:TextStyle(fontFamily: 'Anton', fontSize: 30,fontWeight: FontWeight.w500, ),),
+                       Text(widget.description,style:TextStyle(fontFamily: 'Anton', fontSize: 20,fontWeight: FontWeight.w500, ),),
+                       SizedBox(height: height* .02,),
+                     ],
+                   ),
+                   Row(
+                     children: [
+                       Text(widget.content,style:TextStyle(fontFamily: 'Anton', fontSize: 20,fontWeight: FontWeight.w500,   ), ),
+                       SizedBox(height: height* .02,),
                      ],
                    )
 
